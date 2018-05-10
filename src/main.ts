@@ -24,5 +24,6 @@ if (environment.production) {
   enableProdMode();
 }
 
-var promise = platformBrowserDynamic().bootstrapModule(AppModule);
-promise.then(() => console.log('test'));
+document.addEventListener('DOMContentLoaded', function () {
+  platformBrowserDynamic().bootstrapModule(WfaNg2Module, []);
+}, false);
