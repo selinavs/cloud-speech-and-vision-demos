@@ -24,6 +24,4 @@ if (environment.production) {
   enableProdMode();
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-  platformBrowserDynamic().bootstrapModule(WfaNg2Module, []);
-}, false);
+platformBrowserDynamic().bootstrapModule(AppModule);
