@@ -24,4 +24,5 @@ if (environment.production) {
   enableProdMode();
 }
 
-platformBrowserDynamic().bootstrapModule(AppModule);
+var promise = platformBrowserDynamic().bootstrapModule(AppModule);
+promise.then(() => console.log('test'));
